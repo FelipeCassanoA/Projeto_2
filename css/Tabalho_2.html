@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.76), rgb(0, 0, 0)), url('../img/Foto_Fluxo.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    /* Parte do código para adicionar a Barra preta, com o titulo spotyfluxo.com */
+    .black-bar {
+        background-color: black;
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-container img {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .title {
+        color: white;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    /*   */
+    #background{
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        width: 32vw;
+        min-width: 50px;
+        padding: 20px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 5px;
+        box-shadow: 0 0 10px black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }
+        /*   Altera o título "Entrar no Spotifluxo"      */
+        .container h2{
+            align-items: center;
+            height: 10vh;
+            justify-items: center;
+            color: rgb(247, 247, 247);
+            display: flex;
+            text-align: center;
+         }
+        
+        
+        
+        /*  Código para customizar o fundo das formas de login (google,facebook,apple*/ 
+         .another-login {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: rgb(0, 0, 0);
+            height: 170px;
+
+        }
+        /* Código para customizar as outras formas de login*/
+        .customizar_b{
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 1px;
+            border: 0.6px;
+            border-style: groove;
+            border-color: rgb(243, 237, 237);
+            border-radius: 30px;
+            background-color: rgb(0, 0, 0); 
+            height: 40px;
+            width: 255px;
+            scale: 90%;
+            border-color: rgb(34, 26, 26);
+            color: white;
+        }
+        /*   Altera o tamanho dos ícones (facebook, google, apple)*/ 
+        .another-login img{
+            width: 20px;
+        }
+       
+
+        /*  Usado para dar espaçamento do another-login para form-group*/
+        .another-login-linha {
+            border: none;
+            height: 1px;
+            background-color: gray;
+            margin: 10px 0;
+            width: 100%;
+}
+       
+       
+       
+       
+       
+        /* altera o tamanho do retangulo preto*/
+        .form-group{
+            margin-bottom: 40px;
+            height: 20px;
+        }
+        /*  Altera as informações de fora da caixinha do input ( "Email ou nome de usuário/Senha") */
+        .form-group label{
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: rgb(247, 245, 245);
+            font-size: x-small;
+            
+
+
+        }
+
+        /*    Altera a barra onde o usuário insere os dados      */
+        .form-group input{
+            width: 100%;
+            padding: 8px;
+            border:  1px solid rgb(39, 39, 37);
+            color: rgb(198, 204, 204);
+            display: flex;
+            align-items: center;
+            background-color: #333;
+        }
+
+        .form-group[type="checkbox"]{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+        }
+
+
+        form-group	input[type="checkbox"]{ /* Classe relacionada ao butão (lembrar de mim) */
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #333;
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+            position: relative;   
+            justify-content: space-between;
+        }
+        
+
+
+        .form-group input[type = "checkbox"] ::before {
+            content: "";
+            position: absolute;
+            top: 50% ;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            background-color: rgb(177, 8, 8);
+            border-radius: 2px;
+    }
+            /* Código relacionado ao botão de enviar*/
+        .form-group button[type = "submit"]{
+            background-color: rgb(4, 189, 50);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            width: 110%;
+            padding: 8px;
+            border: 1px solid rgb(12, 6, 6);
+            border-radius: 18px;
+    }
+
+       /* Customizar o botão "Esqueceu de mim?" */
+        #forgot_password{
+            text-align: center;
+            margin-top: 10px; 
+            color: rgb(153, 13, 13);   
+            background-color: black;
+
+
+        }
+
+
+
+
+
+
+
+
+    </style>
+
+<body>
+    <!--        Códico para adicionar a barra preta no topo da página, com o título       -->
+    <div class="black-bar">
+        <div class="logo-container">
+            <img src="../img/download (1).png" alt="Logo">
+            <h1 class="title">Spotyfluxo</h1>
+        </div>
+    </div>
+
+    <div id = background>
+     
+        <div class = "container">
+            <h2>Entrar no Spotifluxo</h2>
+
+    
+            <!--Código para logar com alguma social mmidia  -->
+           <div class = "another-login">
+                    
+                <button class = "customizar_b">
+                    <img src="../img/Google-Icon.png" alt="Google logo">
+                    <b>Continuar Com O Google</b>
+                </button>
+                    
+                <button class = "customizar_b">
+                    <img src="../img/Facebook-Icon.png" alt="Facebook logo">
+                    <b>Continuar Com O Facebook</b>
+                </button>
+                    
+                <button class = "customizar_b">
+                    <img src="../img/apple.png" alt="Apple logo">
+                    <b>Continuar Com A Apple</b>
+                </button>
+                    
+                <button class = "customizar_b">
+                    <b>Continuar Com O Número de</br> Telefone
+                </button>
+               
+                <div class="another-login-linha"></div>
+                <div class="another-login-linha"></div>
+            </div>
+
+            <!--   Parte do site onde é criado os inputs        -->
+            <form id="contact-form"  action="#">
+                <div class = "form-group">
+                    <label for="name"> Email ou nome de usuário</label>
+                    <input type="text" name="name" id="name" placeholder="Email ou nome de usuário">
+                </div>
+
+                <div class = "form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" placeholder="Senha">
+                </div>
+
+                <div class = "form-group">
+                    <label for="checkbox"> Lembrar de mim</label>
+                    <input type="checkbox" name = "checkbox" id = "checkbox" class = "lembrar-de-mim">
+                </div>
+    
+                <div class = "form-group">
+                    <button type="submit">Enviar </button>
+                </div>
+
+                <div id="forgot_password">
+                    <a href="#">
+                        Esqueceu sua senha?
+                    </a>
+
+
+                </div>
+            </form>
+            <!-- Elemento para exibir a confirmarção -->
+            <p id="confirmacao"></p>
+            
+        </div>
+    </div>
+
+
+    </body>
+<script>
+                // Função para obter os valores dos campos e exibir um alerta com as informações
+  function enviarFormulario() {
+    
+                    // Obter os valores dos campos
+    var email = document.getElementById("name").value;
+    var senha = document.getElementById("password").value;
+    var lembrar = document.getElementById("checkbox").checked;
+
+                // Exibir um alerta com as informações
+    alert("Informações do formulário:\n\nEmail: " + email + "\nSenha: " + senha + "\nLembrar de mim: " + lembrar);
+    document.getElementById("confirmacao").textContent = "Formulário enviado: " + email + ", " + senha + ", " + lembrar;
+
+}
+
+                // Executar esta função quando o botão "Enviar" for clicado
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    enviarFormulario(); // Chamar a função enviarFormulario
+ 
+
+    
+ });
+</script>
+
+
+
+
+
+</html>
