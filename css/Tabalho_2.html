@@ -125,10 +125,11 @@
        
        
        
-        /* altera o tamanho do retangulo preto*/
+        /* altera o tamanho do retangulo preto de fundo*/
         .form-group{
             margin-bottom: 40px;
             height: 20px;
+            
         }
         /*  Altera as informações de fora da caixinha do input ( "Email ou nome de usuário/Senha") */
         .form-group label{
@@ -137,6 +138,8 @@
             margin-bottom: 5px;
             color: rgb(247, 245, 245);
             font-size: x-small;
+            font-family: Arial, Helvetica, sans-serif;
+            
             
 
 
@@ -144,13 +147,17 @@
 
         /*    Altera a barra onde o usuário insere os dados      */
         .form-group input{
-            width: 100%;
-            padding: 8px;
+            height: 50%;
+            width: 105%;
+            padding: 9px;
             border:  1px solid rgb(39, 39, 37);
             color: rgb(198, 204, 204);
             display: flex;
             align-items: center;
             background-color: #333;
+            justify-items: center;
+            margin: 0 auto;
+
         }
 
         .form-group[type="checkbox"]{
@@ -200,11 +207,11 @@
             border-radius: 18px;
     }
 
-       /* Customizar o botão "Esqueceu de mim?" */
+       /* Customizar o botão "Esqueceu sua senha?" */
         #forgot_password{
             text-align: center;
             margin-top: 10px; 
-            color: rgb(153, 13, 13);   
+            color: rgb(177, 166, 166);   
             background-color: black;
 
 
@@ -224,14 +231,14 @@
     <div class="black-bar">
         <div class="logo-container">
             <img src="../img/download (1).png" alt="Logo">
-            <h1 class="title">Spotyfluxo</h1>
+            <h1 class="title">Spotfluxo.com</h1>
         </div>
     </div>
 
     <div id = background>
      
         <div class = "container">
-            <h2>Entrar no Spotifluxo</h2>
+            <h2>Entrar no Spotfluxo</h2>
 
     
             <!--Código para logar com alguma social mmidia  -->
@@ -258,13 +265,14 @@
                
                 <div class="another-login-linha"></div>
                 <div class="another-login-linha"></div>
+                
             </div>
 
             <!--   Parte do site onde é criado os inputs        -->
             <form id="contact-form"  action="#">
                 <div class = "form-group">
-                    <label for="name"> Email ou nome de usuário</label>
-                    <input type="text" name="name" id="name" placeholder="Email ou nome de usuário">
+                    <label for="name"> E-mail ou nome de usuário</label>
+                    <input type="text" name="name" id="name" placeholder="E-mail ou nome de usuário">
                 </div>
 
                 <div class = "form-group">
